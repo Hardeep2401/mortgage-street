@@ -1,0 +1,100 @@
+/* ========================================================================= */
+/*======================= mortgage Typography changes ====================== */
+/* ======================================================================== */
+
+//===== variables file for override bootstrap style ========//
+@import "./variables";
+//================ import font family based on figma ==================//
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+//============== font family base ===============//
+$font-family-base: "Montserrat",
+sans-serif;
+$font-family-arial: "Arial",
+sans-serif;
+
+//================ theme colors based on figma ==================//
+$theme-colors: ("primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "cyan-blue": $cyan-blue,
+  "rust": $rust,
+  "gray-100": $gray-100,
+);
+
+// ========== font weight ==============//
+$font-weight-bolder: $font-weight-800 !default;
+
+.fw-medium {
+  font-weight: $font-weight-500 !important;
+}
+
+.fw-black {
+  font-weight: $font-weight-900 !important;
+}
+
+.px-80 {
+  @media screen and (min-width: 1200px) {
+    padding: 0px 80px !important;
+  }
+}
+
+.ps-80 {
+  @media screen and (min-width: 1200px) {
+    padding-left: 80px !important;
+  }
+}
+
+.pe-80 {
+  @media screen and (min-width: 1200px) {
+    padding-right: 0px 80px !important;
+  }
+}
+
+//== font size base
+$font-size-base: 1rem; //16px
+
+//== body color base
+$body-color: $dark;
+
+//== font weight base
+$font-weight-base: $font-weight-400;
+
+//== input
+$input-focus-box-shadow: none;
+
+//== button
+$btn-focus-box-shadow: none !default;
+$btn-active-box-shadow: none !default;
+$btn-focus-box-shadow: none !important;
+$navbar-toggler-focus-width: 0;
+
+//============== set typography of heading ================//
+
+//===== heading
+$btn-font-weight: $font-weight-500;
+$headings-font-weight: $font-weight-700;
+$display-font-weight: $font-weight-700;
+$h1-font-size: 3rem !default; // 36pt
+$h2-font-size: 2.1669rem !default; // 26pt
+$h3-font-size: 1.8331rem !default; // 22pt
+$h4-font-size: 1.6669rem !default; // 20pt
+$h5-font-size: 1.1669rem !default; // 14pt
+$h6-font-size: $font-size-base !default; // 12pt === 16px
+
+//======== small font size
+$small-font-size: 0.9169rem !default; //11pt
+
+//======= lead font size
+$lead-font-size: 1.3331rem !default; // 16pt
+
+//============ import files ================//
+@import "./mixin";
+@import "./header";
+@import "./footer";
+@import "./global";
