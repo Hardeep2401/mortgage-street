@@ -4,11 +4,10 @@ $white: white;
 
 #bannerSection {
   background-image: url(/assets/images/banner-img.jpg);
-}
 
-
-#bannerSection .container-fluid {
-  z-index: 0;
+  & .container-fluid {
+    z-index: 0;
+  }
 }
 
 //===== fast cash section
@@ -27,25 +26,12 @@ $white: white;
 
 //===== contact section
 #contactSection {
-  padding: 60px 0px;
+  // padding: 60px 0px;
 
   .call-section {
     @media screen and (max-width: 768px) {
       border-right: 0px !important;
       border-bottom: 1px solid $secondary;
     }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .iconSvg {
-    height: 40px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .iconSvg {
-    height: 70px;
-    width: auto;
   }
 }

@@ -1,9 +1,9 @@
 <!--header-->
 <header class="position-fixed start-0 end-0 top-0">
   <nav
-    class="navbar navbar-expand-sm navbar-light bg-white shadow-sm position-absolute start-0 end-0 px-80"
+    class="navbar navbar-expand-sm navbar-light bg-white shadow-sm position-absolute start-0 end-0 py-0"
   >
-    <div class="container-fluid">
+    <div class="container-fluid px-80">
       <a class="navbar-brand" [routerLink]="['/']"
         ><img
           alt="logo"
@@ -21,7 +21,12 @@
       <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item me-3 mb-3 mb-sm-0">
-            <button class="btn btn-primary rounded-pill px-3">Log In</button>
+            <button
+              class="btn btn-primary rounded-pill px-3"
+              routerLink="dashboard"
+            >
+              Log In
+            </button>
           </li>
           <li class="nav-item">
             <button class="btn btn-primary rounded-pill px-3">Register</button>
