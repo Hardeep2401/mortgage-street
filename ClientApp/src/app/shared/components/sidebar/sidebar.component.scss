@@ -1,0 +1,7 @@
+//================ sidebar scss ==============//
+$primary: #001e61;
+$light: rgba(248, 249, 250, 1);
+
+#sidebar li a:hover {
+    background-color: $light !important;
+}

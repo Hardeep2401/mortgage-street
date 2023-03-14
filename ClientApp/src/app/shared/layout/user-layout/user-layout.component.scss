@@ -1,1 +1,21 @@
-//================ user scss =================//
+main {
+    margin-left: 250px;
+}
+
+#asidenav {
+    width: 250px;
+    height: 100%;
+}
+
+.footer {
+    z-index: 1;
+}
+
+#asidenav {
+    width: 250px !important;
+}
+
+.header-section {
+    width: calc(100% - 250px);
+    z-index: 2;
+}
