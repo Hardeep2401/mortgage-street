@@ -1,7 +1,10 @@
 <!--header-->
 <header class="">
   <nav class="navbar navbar-expand-sm navbar-light bg-white shadow-sm py-0">
-    <div class="container-fluid px-80">
+    <div
+      class="container-fluid"
+      [ngClass]="layoutNav ? 'pe-80 ps-4' : 'px-80'"
+    >
       <a class="navbar-brand" [routerLink]="['/']"
         ><img
           alt="logo"

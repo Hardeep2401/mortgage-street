@@ -1,11 +1,17 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonService } from '../../services/common.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent{
-protected isMenuCollapsed:boolean = true;
+export class HeaderComponent {
+  layoutNav: boolean;
+  protected isMenuCollapsed: boolean = true;
 
+  constructor(private commonService: CommonService) {}
+  ngOnInit() {
+    this.layoutNav = this.commonService.layoutNav;
+  }
 }

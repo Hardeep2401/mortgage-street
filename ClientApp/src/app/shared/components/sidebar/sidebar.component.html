@@ -11,111 +11,168 @@
   <!-- ul -->
   <ul class="list-unstyled">
     <!-- li -->
-    <li>
+    <li (click)="isActive()">
       <a
+        [ngClass]="active ? 'active' : ''"
         class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-        href="#"
-        >Dashboard</a
+        (click)="collapse.toggle()"
+        [attr.aria-expanded]="!isCollapsed"
+        aria-controls="collapseExample"
       >
+        Dashboards
+      </a>
+      <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+        <ul class="list-unstyled shadow-sm">
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Default</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >CMS</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >E-commerce</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Projects</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Charts</a
+            >
+          </li>
+          <!-- /li -->
+        </ul>
+      </div>
     </li>
     <!-- /li -->
     <!-- li -->
-    <li>
+    <li (click)="isActive()">
       <a
+        [ngClass]="active ? 'active' : ''"
         class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-        href="#"
-        >About Us</a
+        (click)="collapse.toggle()"
+        [attr.aria-expanded]="!isCollapsed"
+        aria-controls="collapseExample"
       >
+        Widgets
+      </a>
+      <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+        <ul class="list-unstyled shadow-sm">
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Stats</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Data</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Categories</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Media library</a
+            >
+          </li>
+          <!-- /li -->
+        </ul>
+      </div>
     </li>
     <!-- /li -->
     <!-- li -->
-    <li>
+    <li (click)="isActive()">
       <a
+        [ngClass]="active ? 'active' : ''"
         class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-        href="#"
-        >Pages</a
+        (click)="collapse.toggle()"
+        [attr.aria-expanded]="!isCollapsed"
+        aria-controls="collapseExample"
       >
-    </li>
-    <!-- /li -->
-    <!-- li -->
-    <li>
-      <a
-        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-        href="#"
-        >User</a
-      >
-    </li>
-    <!-- /li -->
-    <!-- li -->
-    <li>
-      <a
-        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-        href="#"
-        >Forms</a
-      >
-    </li>
-    <!-- /li -->
-    <!-- li -->
-    <li>
-      <a
-        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-        href="#"
-        >Project</a
-      >
-    </li>
-    <!-- /li -->
-    <!-- li -->
-    <li>
-      <a
-        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-        href="#"
-        >Dashboard</a
-      >
-    </li>
-    <!-- /li -->
-    <!-- li -->
-    <li>
-      <a
-        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-        href="#"
-        >About Us</a
-      >
-    </li>
-    <!-- /li -->
-    <!-- li -->
-    <li>
-      <a
-        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-        href="#"
-        >Pages</a
-      >
-    </li>
-    <!-- /li -->
-    <!-- li -->
-    <li>
-      <a
-        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-        href="#"
-        >User</a
-      >
-    </li>
-    <!-- /li -->
-    <!-- li -->
-    <li>
-      <a
-        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-        href="#"
-        >Forms</a
-      >
-    </li>
-    <!-- /li -->
-    <!-- li -->
-    <li>
-      <a
-        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-        href="#"
-        >Project</a
-      >
+        CMS
+      </a>
+      <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+        <ul class="list-unstyled shadow-sm">
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Posts</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Add new post</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Categories</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Media library</a
+            >
+          </li>
+          <!-- /li -->
+        </ul>
+      </div>
     </li>
     <!-- /li -->
   </ul>

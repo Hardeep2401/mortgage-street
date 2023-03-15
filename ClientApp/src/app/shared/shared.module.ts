@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { DefaultLayoutComponent } from './layout/default-layout/default-layout.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 
+
 @NgModule({
   declarations: [
     UserLayoutComponent,
