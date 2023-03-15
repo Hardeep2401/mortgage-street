@@ -9,17 +9,28 @@
     </a>
   </div>
   <!-- ul -->
-  <ul class="list-unstyled">
+  <ul class="list-unstyled mb-0 main-ul">
     <!-- li -->
     <li (click)="isActive()">
       <a
         [ngClass]="active ? 'active' : ''"
-        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4 justify-content-between"
         (click)="collapse.toggle()"
         [attr.aria-expanded]="!isCollapsed"
-        aria-controls="collapseExample"
-      >
+        aria-controls="collapseExample">
         Dashboards
+        <span class="svg-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+            />
+          </svg>
+        </span>
       </a>
       <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
         <ul class="list-unstyled shadow-sm">
@@ -75,12 +86,24 @@
     <li (click)="isActive()">
       <a
         [ngClass]="active ? 'active' : ''"
-        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4 justify-content-between"
         (click)="collapse.toggle()"
         [attr.aria-expanded]="!isCollapsed"
         aria-controls="collapseExample"
       >
         Widgets
+        <span class="svg-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+            />
+          </svg>
+        </span>
       </a>
       <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
         <ul class="list-unstyled shadow-sm">
@@ -127,12 +150,24 @@
     <li (click)="isActive()">
       <a
         [ngClass]="active ? 'active' : ''"
-        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4 justify-content-between"
         (click)="collapse.toggle()"
         [attr.aria-expanded]="!isCollapsed"
         aria-controls="collapseExample"
       >
         CMS
+        <span class="svg-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+            />
+          </svg>
+        </span>
       </a>
       <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
         <ul class="list-unstyled shadow-sm">
@@ -175,7 +210,144 @@
       </div>
     </li>
     <!-- /li -->
+    <!-- li -->
+    <li (click)="isActive()">
+      <a
+        [ngClass]="active ? 'active' : ''"
+        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4 justify-content-between"
+        (click)="collapse.toggle()"
+        [attr.aria-expanded]="!isCollapsed"
+        aria-controls="collapseExample">
+        Dashboards
+        <span class="svg-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+            />
+          </svg>
+        </span>
+      </a>
+      <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+        <ul class="list-unstyled shadow-sm">
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Default</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >CMS</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >E-commerce</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Projects</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Charts</a
+            >
+          </li>
+          <!-- /li -->
+        </ul>
+      </div>
+    </li>
+    <!-- /li -->
+    <!-- li -->
+    <li (click)="isActive()">
+      <a
+        [ngClass]="active ? 'active' : ''"
+        class="text-decoration-none text-dark d-flex align-item-center py-2 px-4 justify-content-between"
+        (click)="collapse.toggle()"
+        [attr.aria-expanded]="!isCollapsed"
+        aria-controls="collapseExample"
+      >
+        Widgets
+        <span class="svg-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+            />
+          </svg>
+        </span>
+      </a>
+      <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+        <ul class="list-unstyled shadow-sm">
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Stats</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Data</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Categories</a
+            >
+          </li>
+          <!-- /li -->
+          <!-- li -->
+          <li class="sidebar-list">
+            <a
+              class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+              [routerLink]="['/dashboard']"
+              >Media library</a
+            >
+          </li>
+          <!-- /li -->
+        </ul>
+      </div>
+    </li>
+    <!-- /li -->
   </ul>
   <!-- /ul -->
 </div>
+
 <!-- /sidebar -->

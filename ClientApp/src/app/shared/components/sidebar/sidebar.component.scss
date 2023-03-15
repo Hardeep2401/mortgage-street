@@ -3,15 +3,28 @@ $primary: #001e61;
 $light: rgba(248, 249, 250, 1);
 
 #sidebar li a:hover {
-    background-color: $light;
+  background-color: $light;
 }
 
 .active {
+  background-color: $primary !important;
+  color: white !important;
+
+  &:hover {
     background-color: $primary !important;
     color: white !important;
+  }
+  & .svg-icon svg {
+    transform: rotate(90deg);
+    transition: 0.35s;
+  }
+}
+.main-ul {
+  height: calc(100vh - 300px);
+  overflow-y: auto;
+}
 
-    &:hover {
-        background-color: $primary !important;
-        color: white !important;
-    }
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
 }
