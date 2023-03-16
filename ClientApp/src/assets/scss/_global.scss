@@ -53,3 +53,16 @@ header {
     }
   }
 }
+
+.accordion-body {
+  padding: 0px !important;
+}
+
+.accordion-button::after {
+  background-position: center;
+  background-size: 12px !important;
+}
+
+.accordion-item {
+  border: none !important;
+}

@@ -6,25 +6,12 @@ $light: rgba(248, 249, 250, 1);
   background-color: $light;
 }
 
-.active {
-  background-color: $primary !important;
-  color: white !important;
-
-  &:hover {
-    background-color: $primary !important;
-    color: white !important;
-  }
-  & .svg-icon svg {
-    transform: rotate(90deg);
-    transition: 0.35s;
-  }
-}
 .main-ul {
-  height: calc(100vh - 300px);
+  height: calc(100vh - 90px);
   overflow-y: auto;
+  border-right: 1px solid #D4D4D4;
 }
 
-/* width */
 ::-webkit-scrollbar {
-  width: 3px;
+  width: 0px;
 }

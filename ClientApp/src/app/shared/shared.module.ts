@@ -5,10 +5,10 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { ApiAuthorizationModule } from '../pages/auth/api-authorization.module';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './components/footer/footer.component';
 import { DefaultLayoutComponent } from './layout/default-layout/default-layout.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-
 
 @NgModule({
   declarations: [
@@ -23,6 +23,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     RouterModule,
     ApiAuthorizationModule,
     NgbCollapseModule,
+    NgbAccordionModule,
   ],
 })
 export class SharedModule {}
