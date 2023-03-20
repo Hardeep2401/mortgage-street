@@ -17,17 +17,16 @@ $white: white;
   img {
     object-fit: cover;
   }
-}
-
-#simpleSection .simple-bg-img {
+   .simple-bg-img {
   background-image: url("/assets/images/business-woman.jpg");
   background-repeat: no-repeat;
 }
+}
+
+ 
 
 //===== contact section
 #contactSection {
-  // padding: 60px 0px;
-
   .call-section {
     @media screen and (max-width: 767px) {
       border-right: 0px !important;

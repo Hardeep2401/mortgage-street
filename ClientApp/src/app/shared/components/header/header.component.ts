@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonService } from '../../services/common.service';
-
+ 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -14,4 +14,7 @@ export class HeaderComponent {
   ngOnInit() {
     this.layoutNav = this.commonService.layoutNav;
   }
+
+
+
 }

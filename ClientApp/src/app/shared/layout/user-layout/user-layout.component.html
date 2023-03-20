@@ -1,28 +1,31 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12 px-0">
-      <!-- asidenav -->
-      <aside id="asidenav" class="position-fixed bg-white shadow">
-        <app-sidebar></app-sidebar>
-      </aside>
-      <!-- /asidenav -->
-      <!--main body-->
-      <main class="mt-0">
-        <!-- header -->
-        <div class="position-fixed header-section">
-          <app-header></app-header>
-        </div>
-        <!-- /header -->
-        <div>
-          <router-outlet></router-outlet>
-        </div>
-      </main>
-      <!--/main body-->
+<section id="userLayout">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 px-0">
+        <!-- asidenav -->
+        <aside id="asidenav" class="position-fixed bg-white shadow">
+          <app-sidebar></app-sidebar>
+        </aside>
+        <!-- /asidenav -->
+        <!--main body-->
+        <main class="mt-0">
+          <!-- header -->
+          <div class="position-fixed header-section">
+            <app-header></app-header>
+          </div>
+          <!-- /header -->
+          <div>
+            <router-outlet></router-outlet>
+          </div>
+        </main>
+        <!--/main body-->
+      </div>
+      <!-- footer -->
+      <div class="col-12 footer px-0">
+        <app-footer></app-footer>
+      </div>
+      <!-- footer -->
     </div>
-    <!-- footer -->
-    <div class="col-12 footer px-0">
-      <app-footer></app-footer>
-    </div>
-    <!-- footer -->
   </div>
-</div>
+  
+</section>

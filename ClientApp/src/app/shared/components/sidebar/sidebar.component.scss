@@ -2,16 +2,19 @@
 $primary: #001e61;
 $light: rgba(248, 249, 250, 1);
 
-#sidebar li a:hover {
-  background-color: $light;
-}
-
-.main-ul {
-  height: calc(100vh - 90px);
-  overflow-y: auto;
-  border-right: 1px solid #D4D4D4;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
+section {
+  #sidebar li a:hover {
+    background-color: $light;
+    .main-ul {
+      height: calc(100vh - 90px);
+      overflow-y: auto;
+      border-right: 1px solid #d4d4d4;
+    }
+  }
+  #btn-toggle {
+    position: absolute;
+    width: 50px;
+    top: 8%;
+    left: 97%;
+  }
 }

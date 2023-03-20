@@ -1,39 +1,38 @@
 //================ user layout scss ==============//
-main {
-    margin-left: 250px;
-    transition: 0.35s all;
-}
-
-#asidenav {
-    width: 250px;
-    height: 100%;
-}
-
-.footer {
-    z-index: 1;
-}
-
-#asidenav {
+#userLayout {
+  #asidenav {
     width: 250px !important;
     transition: 0.35s all;
-}
+  }
 
-.header-section {
-    width: calc(100% - 250px);
-    z-index: 2;
+  main {
+    margin-left: 250px;
     transition: 0.35s all;
+
+    .header-section {
+      width: calc(100% - 250px);
+      z-index: 2;
+      transition: 0.35s all;
+    }
+  }
+
+  .footer {
+    z-index: 1;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    #asidenav {
-        transform: translateX(-250px);
-    }
+  #asidenav {
+    transform: translateX(-250px);
+  }
 
-    main {
-        margin-left: 0px;
-    }
+  main {
+    margin-left: 0px !important;
+  }
 
-    .header-section {
-        width: 100%;
-    }
+  .header-section {
+    width: 100% !important;
+    z-index: 2;
+    transition: 0.35s all;
+  }
 }
