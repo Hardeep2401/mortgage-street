@@ -1,668 +1,678 @@
+<section id="offcanvasSidebar">
+  <!-- sidebar -->
+  <!-- ng offcanvas -->
+  <ng-template #content let-offcanvas>
+    <div class="offcanvas-header d-lg-none">
+      <h5
+        class="offcanvas-title text-primary d-flex align-items-center"
+        id="offcanvas-basic-title"
+      >
+        MORTGAGE STREET
+      </h5>
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        (click)="offcanvas.dismiss('Cross click')"
+      ></button>
+    </div>
+    <div class="offcanvas-body d-lg-none">
+      <ul class="list-unstyled mb-0 main-ul">
+        <!-- li -->
+        <li>
+          <ngb-accordion
+            #acc="ngbAccordion"
+            [closeOthers]="true"
+            activeIds="ngb-panel-0"
+          >
+            <ngb-panel title=" Dashboards">
+              <ng-template ngbPanelContent let-opened="opened">
+                <ul class="list-unstyled shadow-sm">
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Default</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >CMS</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >E-commerce</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Projects</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Charts</a
+                    >
+                  </li>
+                  <!-- /li -->
+                </ul>
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel title=" Dashboards">
+              <ng-template ngbPanelContent>
+                <ul class="list-unstyled shadow-sm">
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Default</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >CMS</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >E-commerce</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Projects</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Charts</a
+                    >
+                  </li>
+                  <!-- /li -->
+                </ul>
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel>
+              <ng-template ngbPanelTitle>
+                <span>Widgets</span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <ul class="list-unstyled shadow-sm">
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Stats</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Data</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Categories</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Media library</a
+                    >
+                  </li>
+                  <!-- /li -->
+                </ul>
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel>
+              <ng-template ngbPanelTitle>
+                <span>CMS</span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <ul class="list-unstyled shadow-sm">
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Posts</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Add new post</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Categories</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Media library</a
+                    >
+                  </li>
+                  <!-- /li -->
+                </ul>
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel>
+              <ng-template ngbPanelTitle>
+                <span>CMS</span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <ul class="list-unstyled shadow-sm">
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Posts</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Add new post</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Categories</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Media library</a
+                    >
+                  </li>
+                  <!-- /li -->
+                </ul>
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel>
+              <ng-template ngbPanelTitle>
+                <span>CMS</span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <ul class="list-unstyled shadow-sm">
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Posts</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Add new post</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Categories</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Media library</a
+                    >
+                  </li>
+                  <!-- /li -->
+                </ul>
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel>
+              <ng-template ngbPanelTitle>
+                <span>CMS</span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <ul class="list-unstyled shadow-sm">
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Posts</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Add new post</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Categories</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Media library</a
+                    >
+                  </li>
+                  <!-- /li -->
+                </ul>
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel>
+              <ng-template ngbPanelTitle>
+                <span>CMS</span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <ul class="list-unstyled shadow-sm">
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Posts</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Add new post</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Categories</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Media library</a
+                    >
+                  </li>
+                  <!-- /li -->
+                </ul>
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel>
+              <ng-template ngbPanelTitle>
+                <span>CMS</span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <ul class="list-unstyled shadow-sm">
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Posts</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Add new post</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Categories</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Media library</a
+                    >
+                  </li>
+                  <!-- /li -->
+                </ul>
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel>
+              <ng-template ngbPanelTitle>
+                <span>CMS</span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <ul class="list-unstyled shadow-sm">
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Posts</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Add new post</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Categories</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Media library</a
+                    >
+                  </li>
+                  <!-- /li -->
+                </ul>
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel>
+              <ng-template ngbPanelTitle>
+                <span>CMS</span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <ul class="list-unstyled shadow-sm">
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Posts</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Add new post</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Categories</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Media library</a
+                    >
+                  </li>
+                  <!-- /li -->
+                </ul>
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel>
+              <ng-template ngbPanelTitle>
+                <span>CMS</span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <ul class="list-unstyled shadow-sm">
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Posts</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Add new post</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Categories</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Media library</a
+                    >
+                  </li>
+                  <!-- /li -->
+                </ul>
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel>
+              <ng-template ngbPanelTitle>
+                <span>CMS</span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <ul class="list-unstyled shadow-sm">
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Posts</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Add new post</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Categories</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Media library</a
+                    >
+                  </li>
+                  <!-- /li -->
+                </ul>
+              </ng-template>
+            </ngb-panel>
+            <ngb-panel>
+              <ng-template ngbPanelTitle>
+                <span>CMS</span>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <ul class="list-unstyled shadow-sm">
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Posts</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Add new post</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Categories</a
+                    >
+                  </li>
+                  <!-- /li -->
+                  <!-- li -->
+                  <li class="sidebar-list">
+                    <a
+                      class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
+                      [routerLink]="['/dashboard']"
+                      >Media library</a
+                    >
+                  </li>
+                  <!-- /li -->
+                </ul>
+              </ng-template>
+            </ngb-panel>
+          </ngb-accordion>
+        </li>
+        <!-- /li -->
+      </ul>
+      <!-- /ul -->
+    </div>
+  </ng-template>
+  <button
+    class="btn bg-gray-100 d-lg-none"
+    id="btn-toggle"
+    (click)="open(content)"
+  >
+    &#9776;
+  </button>
 
+  <!-- /ng offcanvas -->
+</section>
 <section>
   <!-- sidebar -->
-<!-- ng offcanvas -->
-  <ng-template #content let-offcanvas>
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title text-primary d-flex align-items-center" id="offcanvas-basic-title">MORTGAGE STREET</h5>
-        <button
-          type="button"
-          class="btn-close"
-          aria-label="Close"
-          (click)="offcanvas.dismiss('Cross click')"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-    <ul class="list-unstyled mb-0 main-ul">
-       <!-- li -->
-      <li>
-        <ngb-accordion
-          #acc="ngbAccordion"
-          [closeOthers]="true"
-          activeIds="ngb-panel-0"
-        >
-          <ngb-panel title=" Dashboards">
-            <ng-template ngbPanelContent let-opened="opened">
-              <ul class="list-unstyled shadow-sm">
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Default</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >CMS</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >E-commerce</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Projects</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Charts</a
-                  >
-                </li>
-                <!-- /li -->
-              </ul>
-            </ng-template>
-          </ngb-panel>
-          <ngb-panel title=" Dashboards">
-            <ng-template ngbPanelContent>
-              <ul class="list-unstyled shadow-sm">
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Default</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >CMS</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >E-commerce</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Projects</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Charts</a
-                  >
-                </li>
-                <!-- /li -->
-              </ul>
-            </ng-template>
-          </ngb-panel>
-          <ngb-panel>
-            <ng-template ngbPanelTitle>
-              <span>Widgets</span>
-            </ng-template>
-            <ng-template ngbPanelContent>
-              <ul class="list-unstyled shadow-sm">
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Stats</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Data</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Categories</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Media library</a
-                  >
-                </li>
-                <!-- /li -->
-              </ul>
-            </ng-template>
-          </ngb-panel>
-          <ngb-panel>
-            <ng-template ngbPanelTitle>
-              <span>CMS</span>
-            </ng-template>
-            <ng-template ngbPanelContent>
-              <ul class="list-unstyled shadow-sm">
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Posts</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Add new post</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Categories</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Media library</a
-                  >
-                </li>
-                <!-- /li -->
-              </ul>
-            </ng-template>
-          </ngb-panel>
-          <ngb-panel>
-            <ng-template ngbPanelTitle>
-              <span>CMS</span>
-            </ng-template>
-            <ng-template ngbPanelContent>
-              <ul class="list-unstyled shadow-sm">
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Posts</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Add new post</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Categories</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Media library</a
-                  >
-                </li>
-                <!-- /li -->
-              </ul>
-            </ng-template>
-          </ngb-panel>
-          <ngb-panel>
-            <ng-template ngbPanelTitle>
-              <span>CMS</span>
-            </ng-template>
-            <ng-template ngbPanelContent>
-              <ul class="list-unstyled shadow-sm">
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Posts</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Add new post</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Categories</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Media library</a
-                  >
-                </li>
-                <!-- /li -->
-              </ul>
-            </ng-template>
-          </ngb-panel>
-          <ngb-panel>
-            <ng-template ngbPanelTitle>
-              <span>CMS</span>
-            </ng-template>
-            <ng-template ngbPanelContent>
-              <ul class="list-unstyled shadow-sm">
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Posts</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Add new post</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Categories</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Media library</a
-                  >
-                </li>
-                <!-- /li -->
-              </ul>
-            </ng-template>
-          </ngb-panel>
-          <ngb-panel>
-            <ng-template ngbPanelTitle>
-              <span>CMS</span>
-            </ng-template>
-            <ng-template ngbPanelContent>
-              <ul class="list-unstyled shadow-sm">
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Posts</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Add new post</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Categories</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Media library</a
-                  >
-                </li>
-                <!-- /li -->
-              </ul>
-            </ng-template>
-          </ngb-panel>
-          <ngb-panel>
-            <ng-template ngbPanelTitle>
-              <span>CMS</span>
-            </ng-template>
-            <ng-template ngbPanelContent>
-              <ul class="list-unstyled shadow-sm">
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Posts</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Add new post</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Categories</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Media library</a
-                  >
-                </li>
-                <!-- /li -->
-              </ul>
-            </ng-template>
-          </ngb-panel>
-          <ngb-panel>
-            <ng-template ngbPanelTitle>
-              <span>CMS</span>
-            </ng-template>
-            <ng-template ngbPanelContent>
-              <ul class="list-unstyled shadow-sm">
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Posts</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Add new post</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Categories</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Media library</a
-                  >
-                </li>
-                <!-- /li -->
-              </ul>
-            </ng-template>
-          </ngb-panel>
-          <ngb-panel>
-            <ng-template ngbPanelTitle>
-              <span>CMS</span>
-            </ng-template>
-            <ng-template ngbPanelContent>
-              <ul class="list-unstyled shadow-sm">
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Posts</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Add new post</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Categories</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Media library</a
-                  >
-                </li>
-                <!-- /li -->
-              </ul>
-            </ng-template>
-          </ngb-panel>
-          <ngb-panel>
-            <ng-template ngbPanelTitle>
-              <span>CMS</span>
-            </ng-template>
-            <ng-template ngbPanelContent>
-              <ul class="list-unstyled shadow-sm">
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Posts</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Add new post</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Categories</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Media library</a
-                  >
-                </li>
-                <!-- /li -->
-              </ul>
-            </ng-template>
-          </ngb-panel>
-          <ngb-panel>
-            <ng-template ngbPanelTitle>
-              <span>CMS</span>
-            </ng-template>
-            <ng-template ngbPanelContent>
-              <ul class="list-unstyled shadow-sm">
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Posts</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Add new post</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Categories</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Media library</a
-                  >
-                </li>
-                <!-- /li -->
-              </ul>
-            </ng-template>
-          </ngb-panel>
-          <ngb-panel>
-            <ng-template ngbPanelTitle>
-              <span>CMS</span>
-            </ng-template>
-            <ng-template ngbPanelContent>
-              <ul class="list-unstyled shadow-sm">
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Posts</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Add new post</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Categories</a
-                  >
-                </li>
-                <!-- /li -->
-                <!-- li -->
-                <li class="sidebar-list">
-                  <a
-                    class="text-decoration-none text-dark d-flex align-item-center py-2 px-4"
-                    [routerLink]="['/dashboard']"
-                    >Media library</a
-                  >
-                </li>
-                <!-- /li -->
-              </ul>
-            </ng-template>
-          </ngb-panel>
-        </ngb-accordion>
-      </li>
-      <!-- /li -->
-    </ul>
-    <!-- /ul -->
-      </div>
-  
-    
-  </ng-template>
-  <button class="btn btn-lg bg-light d-lg-none" id="btn-toggle" (click)="open(content)">&#9776;</button>
-  
-  <!-- /ng offcanvas -->
-  <!-- sidebar -->
-  <div id="sidebar" class="border-end">
+  <div id="sidebar">
     <div
       class="d-flex align-items-center justify-content-center"
       style="height: 90px"
@@ -1316,4 +1326,3 @@
   </div>
   <!-- /sidebar -->
 </section>
-

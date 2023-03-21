@@ -66,3 +66,10 @@ header {
 .accordion-item {
   border: none !important;
 }
+
+@include for-tablet-landscape-up {
+  .offcanvas,
+  .offcanvas-backdrop {
+    display: none !important;
+  }
+}
