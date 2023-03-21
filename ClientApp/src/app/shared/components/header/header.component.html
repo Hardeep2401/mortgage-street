@@ -1,32 +1,103 @@
 <!--header-->
-<!-- sidebar offcanvas -->
-
-<!-- /sidebar offcanvas -->
-
 <header>
+  <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-0">
-    <div class="container-fluid" [ngClass]="layoutNav ? 'pe-80 ps-4' : 'px-80'">
-      <a class="navbar-brand" [routerLink]="['/']"
-        ><img
-          alt="logo"
-          height="80"
-          width="80"
-          src="assets/images/nav/nav-logo.png"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        (click)="isMenuCollapsed = !isMenuCollapsed"
-      >
+    <div class="container-fluid px-80">
+      <a class="navbar-brand" [routerLink]="['/']"><img alt="logo" height="80" width="80"
+          src="assets/images/nav/nav-logo.png" /></a>
+      <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
         &#9776;
       </button>
-      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item me-3 mb-3 mb-sm-0">
-            <button
-              class="btn btn-primary rounded-pill px-3"
-              routerLink="dashboard"
-            >
+      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse flex-grow-0">
+        <div class="d-flex align-items-center" *ngIf="!isValue">
+          <form class="d-flex justify-content-end pe-2">
+            <input type="text" name="search" placeholder="Search..." class="form-control from-input d-none d-lg-block " />
+            <span class="align-self-center position-absolute form-icon">
+              <div>
+                <div ngbDropdown class="dropdown">
+                  <span ngbDropdownToggle class="btn" type="button" aria-expanded="false">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path fill="#6d7174"
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                      </svg>
+                    </span>
+                  </span>
+                  <div  ngbDropdownMenu class="dropdown-menu rounded-0 d-lg-none p-3">
+                    <form>
+                      <input type="text" name="search" placeholder="Search..." class="form-control" />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </span>
+          </form>
+          <!-- dropdown -->
+          <div class="pe-2">
+            <div ngbDropdown class="dropdown">
+              <button ngbDropdownToggle class="btn btn-icon rounded-circle"  type="button" aria-expanded="false">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill=""
+                      d="M22 20H2v-2h1v-6.969C3 6.043 7.03 2 12 2s9 4.043 9 9.031V18h1v2zM5 18h14v-6.969C19 7.148 15.866 4 12 4s-7 3.148-7 7.031V18zm4.5 3h5a2.5 2.5 0 1 1-5 0z" />
+                  </svg>
+                </span>
+              </button>
+              <ul ngbDropdownMenu class="dropdown-menu rounded-0 border-0 shadow">
+                <div>
+                  <h6 class="p-0 m-0 px-3 pt-2 mb-2">MARK</h6>
+                  <p class="p-0 m-0 px-3 small">Web Developer</p>
+                  <div class="border-1 border-top my-2"></div>
+                </div>
+                <li>
+                  <a ngbDropdownItem class="dropdown-item py-2" href="#">Settings</a>
+                </li>
+                <li>
+                  <a ngbDropdownItem class="dropdown-item py-2" href="#">Activity log</a>
+                </li>
+                <li class="mb-0">
+                  <a ngbDropdownItem class="border-1 border-top my-2 p-0"></a>
+                </li>
+                <li>
+                  <a ngbDropdownItem class="dropdown-item" href="#">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pe-2">
+            <div ngbDropdown class="dropdown">
+              <button ngbDropdownToggle class="btn p-0 rounded-circle btn-img btn-icon" type="button" aria-expanded="false">
+                <span>
+                  <img src="./assets/images/user-image.jpg" alt="user-image" height="45" width="45" class="user-image rounded-circle" />
+                </span>
+              </button>
+              <ul ngbDropdownMenu class="dropdown-menu rounded-0 border-0 shadow">
+                <div>
+                  <h6 class="p-0 m-0 px-3 pt-2 mb-2">DAVID</h6>
+                  <p class="p-0 m-0 px-3 small">Web Developer</p>
+                  <div class="border-1 border-top my-2"></div>
+                </div>
+                <li>
+                  <a ngbDropdownItem class="dropdown-item py-2" href="#">Settings</a>
+                </li>
+                <li>
+                  <a ngbDropdownItem class="dropdown-item py-2" href="#">Activity log</a>
+                </li>
+                <li class="mb-0">
+                  <a ngbDropdownItem class="border-1 border-top my-2 p-0"></a>
+                </li>
+                <li>
+                  <a ngbDropdownItem class="dropdown-item" href="#">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- dropdown -->
+        </div>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0"  *ngIf="isValue">
+          <li class="nav-item me-3 mb-3 mb-lg-0">
+            <button class="btn btn-primary rounded-pill px-3" routerLink="dashboard">
               Log In
             </button>
           </li>
@@ -34,13 +105,12 @@
             <button class="btn btn-primary rounded-pill px-3">Register</button>
           </li>
         </ul>
+        
       </div>
+      <!-- search -->
     </div>
   </nav>
-  <!-- sidebar offcanvas button -->
- 
-  <!-- /sidebar offcanvas button -->
-  
+  <!-- /navbar -->
 </header>
 
 <!--/header-->

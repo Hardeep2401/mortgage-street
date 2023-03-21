@@ -4,6 +4,58 @@
 // }
 header {
   z-index: 99999;
-  
-}
 
+  form {
+    width: 350px;
+    .from-input {
+      background-color: #f2f3f4 !important;
+    }
+
+    & :focus {
+      border-color: rgb(185 181 181);
+    }
+  }
+
+  .dropdown {
+    .dropdown-menu {
+      right: 0;
+      left: auto;
+    }
+
+    .dropdown-toggle {
+      &::after {
+        display: none;
+      }
+
+      &:active {
+        border-color: transparent !important;
+      }
+    }
+
+    svg {
+      fill: #95989b !important;
+
+      &:hover {
+        fill: #6d7174 !important;
+      }
+    }
+
+    .btn-icon {
+      height: 50px;
+      width: 50px;
+      
+
+      &:hover {
+        background-color: #e6e8ea !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: 585px) {
+    header {
+      form {
+        width: auto !important;
+      }
+    }
+  }
+}

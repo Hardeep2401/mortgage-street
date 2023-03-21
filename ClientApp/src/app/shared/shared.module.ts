@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ApiAuthorizationModule } from '../pages/auth/api-authorization.module';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDropdownModule  } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './components/footer/footer.component';
 import { DefaultLayoutComponent } from './layout/default-layout/default-layout.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -24,6 +25,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     ApiAuthorizationModule,
     NgbCollapseModule,
     NgbAccordionModule,
+    NgbDropdownModule ,
   ],
 })
 export class SharedModule {}
