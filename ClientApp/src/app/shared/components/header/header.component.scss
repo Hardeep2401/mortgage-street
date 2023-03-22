@@ -16,6 +16,10 @@ header {
   }
 
   .dropdown {
+    :active {
+      border-color: transparent !important;
+    }
+
     .dropdown-menu {
       right: 0;
       left: auto;
@@ -42,26 +46,36 @@ header {
     .btn-icon {
       height: 45px;
       width: 45px;
-      
-
-      &:hover {
-        background-color: #e6e8ea !important;
-      }
     }
   }
 
-  
+
 }
 
-@media screen and (max-width:992px){
+@media screen and (max-width:767px) {
   header {
     .dropdown {
       .dropdown-menu {
         right: 0;
-        left: 0;
         position: relative;
         margin-top: 2%;
         margin-bottom: 2%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  header {
+    .dropdown {
+      .bg-light {
+        background-color: transparent !important;
+      }
+
+      .btn-icon {
+        &:hover {
+          background-color: #e6e8ea !important;
+        }
       }
     }
   }

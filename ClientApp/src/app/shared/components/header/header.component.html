@@ -1,10 +1,10 @@
 <!--header-->
 <header>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-0">
+  <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm py-0">
     <div
       class="container-fluid"
-      [ngClass]="layoutNav ? 'pe-80 ps-lg-4' : 'px-80'"
+      [ngClass]="layoutNav ? 'pe-80 ps-md-4' : 'px-80'"
     >
       <button
         class="navbar-toggler border-0 fw-bold"
@@ -29,9 +29,9 @@
       </button>
       <div
         [ngbCollapse]="isMenuCollapsed"
-        class="collapse navbar-collapse flex-grow-0"
+        class="collapse navbar-collapse flex-grow-0 py-2 py-md-0 pt-2 pb-4"
       >
-        <div class="d-lg-flex align-items-center" *ngIf="!isValue">
+        <div class="d-flex flex-column-reverse flex-md-row" *ngIf="!isValue">
           <form class="d-flex justify-content-end">
             <input
               type="text"
@@ -69,15 +69,17 @@
             </span>
           </form>
           <!-- dropdown -->
-          <div class="py-2 py-lg-0 px-lg-2">
-            <div ngbDropdown class="dropdown">
+          <div
+            ngbDropdown
+            class="dropdown py-2 py-lg-0 px-lg-2 py-md-0 px-md-2"
+          >
+            <div ngbDropdownToggle class="pb-lg-0 pb-md-0 bg-light">
               <button
-                ngbDropdownToggle
-                class="btn btn-icon rounded-circle p-0 bg-light"
+                class="btn btn-icon rounded-circle p-0"
                 type="button"
                 aria-expanded="false"
               >
-                <span>
+                <span class="px-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -90,6 +92,7 @@
                     />
                   </svg>
                 </span>
+                <span class="d-md-none fw-normal">Notification</span>
               </button>
               <ul
                 ngbDropdownMenu
@@ -119,15 +122,14 @@
               </ul>
             </div>
           </div>
-          <div>
-            <div ngbDropdown class="dropdown">
+          <div ngbDropdown class="dropdown">
+            <div ngbDropdownToggle class="pb-lg-0 pb-md-0 bg-light">
               <button
-                ngbDropdownToggle
                 class="btn p-0 rounded-circle btn-img btn-icon"
                 type="button"
                 aria-expanded="false"
               >
-                <span>
+                <span class="px-2 px-lg-0">
                   <img
                     src="./assets/images/user-image.jpg"
                     alt="user-image"
@@ -136,6 +138,7 @@
                     class="user-image rounded-circle"
                   />
                 </span>
+                <span class="d-md-none fw-normal">David</span>
               </button>
               <ul
                 ngbDropdownMenu
@@ -165,7 +168,7 @@
               </ul>
             </div>
           </div>
-          <!-- dropdown -->
+          <!-- /dropdown -->
         </div>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0" *ngIf="isValue">
           <li class="nav-item me-3 mb-3 mb-lg-0">
