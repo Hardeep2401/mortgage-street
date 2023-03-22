@@ -6,7 +6,6 @@ header {
   z-index: 99999;
 
   form {
-    width: 350px;
     .from-input {
       background-color: #f2f3f4 !important;
     }
@@ -41,8 +40,8 @@ header {
     }
 
     .btn-icon {
-      height: 50px;
-      width: 50px;
+      height: 45px;
+      width: 45px;
       
 
       &:hover {
@@ -51,11 +50,5 @@ header {
     }
   }
 
-  @media screen and (max-width: 585px) {
-    header {
-      form {
-        width: auto !important;
-      }
-    }
-  }
+  
 }

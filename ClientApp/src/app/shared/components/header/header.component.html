@@ -2,16 +2,19 @@
 <header>
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-0">
-    <div class="container-fluid px-80">
+    <div class="container-fluid" [ngClass]="layoutNav ? 'pe-80 ps-lg-4' : 'px-80'">
+      <button class="navbar-toggler border-0 fw-bold" type="button">
+        <i class="bi bi-text-left fs-3"></i>
+      </button>
       <a class="navbar-brand" [routerLink]="['/']"><img alt="logo" height="80" width="80"
           src="assets/images/nav/nav-logo.png" /></a>
       <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
         &#9776;
       </button>
       <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse flex-grow-0">
-        <div class="d-flex align-items-center" *ngIf="!isValue">
-          <form class="d-flex justify-content-end pe-2">
-            <input type="text" name="search" placeholder="Search..." class="form-control from-input d-none d-lg-block " />
+        <div class="d-lg-flex align-items-center" *ngIf="!isValue">
+          <form class="d-flex justify-content-end">
+            <input type="text" name="search" placeholder="Search..." class="form-control from-input" />
             <span class="align-self-center position-absolute form-icon">
               <div>
                 <div ngbDropdown class="dropdown">
@@ -24,8 +27,8 @@
                       </svg>
                     </span>
                   </span>
-                  <div  ngbDropdownMenu class="dropdown-menu rounded-0 d-lg-none p-3">
-                    <form>
+                  <div>
+                    <form ngbDropdownMenu class="dropdown-menu rounded-0 d-lg-none p-3">
                       <input type="text" name="search" placeholder="Search..." class="form-control" />
                     </form>
                   </div>
@@ -34,9 +37,9 @@
             </span>
           </form>
           <!-- dropdown -->
-          <div class="pe-2">
+          <div class="px-1">
             <div ngbDropdown class="dropdown">
-              <button ngbDropdownToggle class="btn btn-icon rounded-circle"  type="button" aria-expanded="false">
+              <button ngbDropdownToggle class="btn btn-icon rounded-circle p-0"  type="button" aria-expanded="false">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path fill=""
@@ -65,11 +68,11 @@
               </ul>
             </div>
           </div>
-          <div class="pe-2">
+          <div>
             <div ngbDropdown class="dropdown">
               <button ngbDropdownToggle class="btn p-0 rounded-circle btn-img btn-icon" type="button" aria-expanded="false">
                 <span>
-                  <img src="./assets/images/user-image.jpg" alt="user-image" height="45" width="45" class="user-image rounded-circle" />
+                  <img src="./assets/images/user-image.jpg" alt="user-image" height="40" width="40" class="user-image rounded-circle" />
                 </span>
               </button>
               <ul ngbDropdownMenu class="dropdown-menu rounded-0 border-0 shadow">

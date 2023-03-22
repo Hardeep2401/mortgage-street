@@ -73,3 +73,19 @@ header {
     display: none !important;
   }
 }
+
+.sidebar {
+  .accordion-button {
+    &::after {
+      transform: rotate(-90deg) !important;
+    }
+
+    &:not(.collapsed)::after {
+      transform: rotate(0deg) !important;
+    }
+
+    &:hover {
+      z-index: 1 !important;
+    }
+  }
+}
