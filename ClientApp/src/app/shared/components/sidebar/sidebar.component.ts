@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import {
   NgbOffcanvas,
   OffcanvasDismissReasons,
@@ -12,12 +12,17 @@ import { CommonService } from '../../services/common.service';
 })
 export class SidebarComponent implements OnInit {
   closeResult = '';
+  offcanvasContent: any;
+  @ViewChild('content') content: ElementRef;
   constructor(
     private offcanvasService: NgbOffcanvas,
     private commonService: CommonService
   ) {}
   ngOnInit() {}
-    open(content) {
+  ngAfterViewInit() {
+    this.offcanvasContent = this.commonService.offcanvasContent = this.content;
+  }
+  open(content) {
     this.offcanvasService
       .open(content, { ariaLabelledBy: 'offcanvas-basic-title' })
       .result.then(
