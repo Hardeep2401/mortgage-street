@@ -27,19 +27,15 @@
                       </svg>
                     </span>
                   </span>
-                  <div>
-                    <form ngbDropdownMenu class="dropdown-menu rounded-0 d-lg-none p-3">
-                      <input type="text" name="search" placeholder="Search..." class="form-control" />
-                    </form>
-                  </div>
                 </div>
               </div>
             </span>
           </form>
           <!-- dropdown -->
-          <div class="px-1">
+          <div class="py-2 py-lg-0 px-lg-2">
             <div ngbDropdown class="dropdown">
-              <button ngbDropdownToggle class="btn btn-icon rounded-circle p-0"  type="button" aria-expanded="false">
+              <button ngbDropdownToggle class="btn btn-icon rounded-circle p-0 bg-light" type="button"
+                aria-expanded="false">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path fill=""
@@ -70,9 +66,11 @@
           </div>
           <div>
             <div ngbDropdown class="dropdown">
-              <button ngbDropdownToggle class="btn p-0 rounded-circle btn-img btn-icon" type="button" aria-expanded="false">
+              <button ngbDropdownToggle class="btn p-0 rounded-circle btn-img btn-icon" type="button"
+                aria-expanded="false">
                 <span>
-                  <img src="./assets/images/user-image.jpg" alt="user-image" height="40" width="40" class="user-image rounded-circle" />
+                  <img src="./assets/images/user-image.jpg" alt="user-image" height="40" width="40"
+                    class="user-image rounded-circle" />
                 </span>
               </button>
               <ul ngbDropdownMenu class="dropdown-menu rounded-0 border-0 shadow">
@@ -98,7 +96,7 @@
           </div>
           <!-- dropdown -->
         </div>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0"  *ngIf="isValue">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" *ngIf="isValue">
           <li class="nav-item me-3 mb-3 mb-lg-0">
             <button class="btn btn-primary rounded-pill px-3" routerLink="dashboard">
               Log In
@@ -108,7 +106,6 @@
             <button class="btn btn-primary rounded-pill px-3">Register</button>
           </li>
         </ul>
-        
       </div>
       <!-- search -->
     </div>

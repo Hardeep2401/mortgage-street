@@ -52,3 +52,17 @@ header {
 
   
 }
+
+@media screen and (max-width:992px){
+  header {
+    .dropdown {
+      .dropdown-menu {
+        right: 0;
+        left: 0;
+        position: relative;
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+    }
+  }
+}
