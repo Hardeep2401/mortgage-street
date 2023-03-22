@@ -3,13 +3,13 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm py-0">
     <div
-      class="container-fluid"
-      [ngClass]="layoutNav ? 'pe-80 ps-md-4' : 'px-80'"
+      class="container-fluid px-80"
     >
       <button
         class="navbar-toggler border-0 fw-bold"
         type="button"
         (click)="open(offcanvasContent)"
+        *ngIf="!isValue"
       >
         <i class="bi bi-text-left fs-3"></i>
       </button>
@@ -71,9 +71,9 @@
           <!-- dropdown -->
           <div
             ngbDropdown
-            class="dropdown py-2 py-lg-0 px-lg-2 py-md-0 px-md-2"
+            class="dropdown py-2 py-md-0 px-md-2"
           >
-            <div ngbDropdownToggle class="pb-lg-0 pb-md-0 bg-light">
+            <div ngbDropdownToggle class="pb-md-0 bg-light">
               <button
                 class="btn btn-icon rounded-circle p-0"
                 type="button"
@@ -123,13 +123,13 @@
             </div>
           </div>
           <div ngbDropdown class="dropdown">
-            <div ngbDropdownToggle class="pb-lg-0 pb-md-0 bg-light">
+            <div ngbDropdownToggle class="pb-md-0 bg-light">
               <button
                 class="btn p-0 rounded-circle btn-img btn-icon"
                 type="button"
                 aria-expanded="false"
               >
-                <span class="px-2 px-lg-0">
+                <span class="px-2 px-md-0">
                   <img
                     src="./assets/images/user-image.jpg"
                     alt="user-image"
@@ -170,8 +170,8 @@
           </div>
           <!-- /dropdown -->
         </div>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" *ngIf="isValue">
-          <li class="nav-item me-3 mb-3 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0" *ngIf="isValue">
+          <li class="nav-item me-3 mb-3 mb-md-0">
             <button
               class="btn btn-primary rounded-pill px-3"
               routerLink="dashboard"
